@@ -1,0 +1,29 @@
+{
+  "profiles": {
+    "sandman": {
+      "host": "sandman.example.internal",
+      "port": 5432,
+      "database": "app",
+      "user": "app",
+      "password": "${PG_SANDMAN_PASSWORD}"
+    },
+    "uat": {
+      "host": "uat.example.internal",
+      "port": 5432,
+      "database": "app",
+      "user": "app",
+      "password": "${PG_UAT_PASSWORD}"
+    },
+    "local": {
+      "host": "localhost",
+      "port": 5432,
+      "database": "app_local",
+      "user": "postgres",
+      "password": "${PG_LOCAL_PASSWORD}"
+    }
+  },
+  "migrations": {
+    "dir": "./migrations",
+    "metaTable": "SequelizeMeta"
+  }
+}

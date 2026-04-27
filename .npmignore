@@ -1,0 +1,8 @@
+src/
+tsconfig.json
+.nvmrc
+.env*
+.dbsync.json
+*.log
+node_modules/
+.gitignore
